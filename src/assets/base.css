@@ -60,7 +60,7 @@
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
+  color: black;
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
@@ -76,18 +76,42 @@ body {
   align-items: center;
 }
 
+h2 {
+  margin-top: 5px;
+}
 button {
-  background-color: white;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
-  min-height: 70px;
+  min-height: 30px;
+  font-size: 12px;
 }
 
 button:hover {
-  background-color: black;
-  color: white;
+  background-color: rgb(217, 225, 230);
+  color: rgb(0, 0, 0);
   transition: background-color 0.3s ease;
+}
+
+.product-list {
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.product {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 10px 15px 10px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
